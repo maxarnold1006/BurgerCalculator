@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frenchfry"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/buntopimageView"
+        android:layout_width="318dp"
+        android:layout_height="208dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/burgerbuntop" />
+
+    <ImageView
+        android:id="@+id/bunbottomimageView"
+        android:layout_width="342dp"
+        android:layout_height="121dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/burgerbunbottom" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buntopimageView"
+        android:layout_centerHorizontal="true" >
+
+    <RadioButton
+        android:id="@+id/beefradioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beef Patty" />
+
+    <RadioButton
+        android:id="@+id/lambradioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lamb Patty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="274dp" />
+
+        <RadioButton
+            android:id="@+id/ostrichradioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ostrich Patty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="322dp" />
+</RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:text="Prosciutto" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/asiagoradioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asiago Cheese"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <RadioButton
+        android:id="@+id/cremeradioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creme Fraiche"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="446dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Caviar sauce up to one teaspoon:"
+       />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioGroup2"
+        android:layout_alignRight="@+id/radioGroup2"
+        android:layout_below="@+id/textView"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:text="Calories?"
+        android:textSize="40sp" />
+
+
+
+</RelativeLayout>
